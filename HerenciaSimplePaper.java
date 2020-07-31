@@ -39,33 +39,20 @@ void IndicarTipo(){
 }
 
 //herencia simple: una subclase de Empresa es Tesla
-class Tesla extends Empresa{
-String tipo;
 
-String ExponerAccidente(){
-    return "La camara no pude reconcer el camion blanco contra"
-            + "\n\t\t\t\t\t\tun cielo brillante";
-}
-void IndicarTipo(){
-    System.out.println("Esta empresa es de tipo : " + tipo);
-}
-}
 
 public class HerenciaSimplePaper {
 
     public static void main(String[] args) {
         Hyundai hyundai1 = new Hyundai();
-        Tesla tesla1= new Tesla();
+       
         
         hyundai1.fecha_accidente=122014;
         hyundai1.causa_accidente="caida de lluvia";
         hyundai1.consecuencia_accidente="se estreello durante la prueva\n";
         hyundai1.tipo="Automotriz";
         
-        tesla1.fecha_accidente=72016;
-        tesla1.causa_accidente="resolucion en el contraste de la imagen";
-        tesla1.consecuencia_accidente="provoco la muerte del conductor\n";
-        tesla1.tipo="Electrica-Automotriz";
+  
         
     System.out.println("\t\tUniversidad de las Fuerzas Armadas Espe - Sede Latacunga");
     System.out.println("Materia: Programacion");
@@ -78,10 +65,7 @@ public class HerenciaSimplePaper {
         hyundai1.MostrarCaracteristicasAccidente();
         System.out.println("Como resultado definieron lo siguiente que: "+hyundai1.ExponerAccidente());
         
-        System.out.println("\n\nInformacion de la empresa Tesla");
-        tesla1.IndicarTipo();
-        tesla1.MostrarCaracteristicasAccidente();
-        System.out.println("Como resultado definieron lo siguiente que: "+tesla1.ExponerAccidente());
+
     }
     
 }
